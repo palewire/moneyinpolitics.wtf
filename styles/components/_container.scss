@@ -1,8 +1,7 @@
 .container {
-  max-width: 730px;
-  margin: 20px auto;
+  padding: 1rem 1.5rem 0 1.5rem;
   line-height: 1.4;
-  @media (max-width: 767px) {
-    padding: 0 15px;
+  @media (max-width: 480px) {
+    padding: 0.75rem 0.75rem 0 0.75rem;
   }
 }

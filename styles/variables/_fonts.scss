@@ -1,6 +1,8 @@
-$font-family-headline: Verdana, sans-serif;
-$font-family-body: Georgia, serif;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800&display=swap');
+
+$font-family-headline: 'Playfair Display', sans-serif;
+$font-family-body: 'Playfair Display', serif;
 $font-family-table: Arial, sans-serif;
 
 $font-weight-headline: 700;
-$font-weight-body: 400;
+$font-weight-body: 500;

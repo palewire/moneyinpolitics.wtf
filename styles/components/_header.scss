@@ -3,12 +3,12 @@
 header {
   h1.masthead {
     margin: 5px 0;
+    font-size: 46px;
   }
-}
-
-.description {
-  font-family: fonts.$font-family-body;
-  font-weight: fonts.$font-weight-body;
-  margin: 0;
-  font-size: 18px;
+  .description {
+    font-family: fonts.$font-family-body;
+    font-weight: fonts.$font-weight-body;
+    margin: 0;
+    font-size: 22px;
+  }
 }

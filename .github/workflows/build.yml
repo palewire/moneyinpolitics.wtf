@@ -1,0 +1,45 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions: write-all
+
+jobs:
+  build:
+    name: Build 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Install
+        run: npm ci
+
+      - name: Build
+        run: |
+          export BAKER_OUTPUT=docs/ && npm run-script build
+          echo 'moneyinpolitics.wtf' > docs/CNAME
+          touch docs/.nojekyll
+          echo 'encoding: UTF-8' > docs/_config.yml
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v2.1.3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './docs'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1.2.3

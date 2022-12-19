@@ -11,8 +11,15 @@
 {% block content %}
 <article>
   <header>
-    <h1 class="masthead">{{ meta.headline }}</h1>
-    <div class="description">{{ meta.description }}</div>
+    <div class="masthead">
+      <h1>{{ meta.headline }}</h1>
+      <div class="description">{{ meta.description }}</div>
+    </div>
+    <div class="search">
+      <form>
+        <input type="text">
+      </form>
+    </div>
   </header>
 </article>
 {% endblock content %}

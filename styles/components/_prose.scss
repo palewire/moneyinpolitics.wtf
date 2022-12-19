@@ -1,0 +1,10 @@
+@use '../variables/fonts';
+
+p {
+  font-family: fonts.$font-family-body;
+  font-weight: fonts.$font-weight-body;
+  &.prose {
+    margin: 18px 0;
+    font-size: 18px;
+  }
+}

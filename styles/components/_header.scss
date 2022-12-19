@@ -1,0 +1,14 @@
+@use '../variables/fonts';
+
+header {
+  h1.masthead {
+    margin: 5px 0;
+  }
+}
+
+.description {
+  font-family: fonts.$font-family-body;
+  font-weight: fonts.$font-weight-body;
+  margin: 0;
+  font-size: 18px;
+}

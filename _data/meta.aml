@@ -1,19 +1,24 @@
-slug: baker-example-page-template
-
-site_name: Baker Examples
+site_name: moneyinpolitics.wtf
 locale: en_US
 
-headline: This is not a headline. Lorem ipsum dolor sit amet consectetur adipisicing
+headline: moneyinpolitics.wtf
+description: America’s most comprehensive dictionary of political fundraising jargon
 
 [byline]
-name: This is not a name
-url: https://www.latimes.com/people/nobody
+name: Agustin Armendariz
+url: https://www.icij.org/journalists/agustin-armendariz/
 
-name: This is not a name
-url: https://www.latimes.com/people/nobody
+name: Anu Narayanswamy
+url: https://www.washingtonpost.com/people/anu-narayanswamy/
+
+name: Ben Welsh
+url: https://palewi.re/who-is-ben-welsh/
+
+name: Derek Willis
+url: http://thescoop.org/about/
 []
 
-pub_date: 2099-12-31 23:58:00
+pub_date: 2022-12-19 00:00:00
 update_date:
 
 seo_headline: This is not a search-engine optimized headline

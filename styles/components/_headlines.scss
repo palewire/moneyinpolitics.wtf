@@ -1,0 +1,10 @@
+@use '../variables/colors';
+@use '../variables/fonts';
+
+h1 {
+  font-family: fonts.$font-family-headline;
+  font-weight: fonts.$font-weight-headline;
+  font-size: 38px;
+  margin: 10px 0;
+  color: colors.$blue;
+}

@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
 
-$font-family-headline: 'Playfair Display', sans-serif;
-$font-family-body: 'Playfair Display', serif;
-$font-family-table: Arial, sans-serif;
+$font-family-serif: 'Playfair Display', serif;
+$font-family-sans: 'IBM Plex Sans', sans-serif;
+$font-family-mono: 'IBM Plex Mono', monospace;
+
+$font-family-headline: $font-family-serif;
+$font-family-body: $font-family-sans;
+$font-family-table: $font-family-mono;
 
 $font-weight-headline: 700;
-$font-weight-body: 500;
+$font-weight-body: 400;

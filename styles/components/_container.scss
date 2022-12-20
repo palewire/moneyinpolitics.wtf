@@ -1,41 +1,69 @@
 @use '../variables/colors';
 
+html,
 body {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
-.border {
-  height: 100vh;
-  width: 100vw;
-  padding: 10px;
-  background: linear-gradient(
-    var(--angle),
-    lighten(colors.$green, 40%),
-    darken(colors.$green, 10%)
-  );
-  animation: 5s rotate linear infinite;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-@keyframes rotate {
-  to {
-    --angle: 360deg;
-  }
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-}
+$border-width: 6px;
 
 .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: calc(100% - $border-width * 2);
+  height: calc(100% - $border-width * 2);
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   background-color: white;
-  height: 100%;
   line-height: 1.4;
   @media (max-width: 480px) {
     padding: 0.75rem 0.75rem 0 0.75rem;
+  }
+}
+
+.gradient-border {
+  background: white;
+  position: relative;
+}
+
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * $border-width);
+  left: calc(-1 * $border-width);
+  height: calc(100% + $border-width * 2);
+  width: calc(100% + $border-width * 2);
+  background: linear-gradient(
+    60deg,
+    #07b39b,
+    #6fba82,
+    lighten(colors.$green, 20%),
+    colors.$green,
+    darken(colors.$green, 10%)
+  );
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

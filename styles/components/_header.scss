@@ -9,12 +9,24 @@ header {
       margin: 0 0 0.2rem 0;
       font-size: 38px;
       letter-spacing: 0.05rem;
+      @media (max-width: 600px) {
+        font-size: 32px;
+      }
+      @media (max-width: 400px) {
+        font-size: 25px;
+      }
     }
     .description {
       font-family: fonts.$font-family-body;
       font-weight: fonts.$font-weight-body;
       margin: 0;
       font-size: 20px;
+      @media (max-width: 600px) {
+        font-size: 18px;
+      }
+      @media (max-width: 400px) {
+        font-size: 15px;
+      }
     }
   }
   .search {

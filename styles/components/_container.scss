@@ -23,11 +23,11 @@ $border-width: 6px;
   justify-content: flex-start;
   width: calc(100% - $border-width * 2);
   height: calc(100% - $border-width * 2);
-  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  padding: 0.33rem 1.15rem 0.33rem 1.15rem;
   background-color: white;
   line-height: 1.4;
   @media (max-width: 480px) {
-    padding: 0.75rem 0.75rem 0 0.75rem;
+    padding: 0.33rem 0.75rem 0.33rem 0.75rem;
   }
 }
 

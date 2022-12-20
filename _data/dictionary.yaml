@@ -1,23 +1,23 @@
 word_list:
 
-# EXAMPLE ENTRY
-# -------------
-# - word: the word goes here
-#   type: is it a noun, verb or adjective
-#   definition_list:
-#     - text: this is the first definition of the word
-#       in_use: this is _the word_ used in a sentence
-#     - text: this is the second definition of the word
-#       in_use: this is _the second word_ used in a sentence
+#  EXAMPLE ENTRY
+#  -------------
+#  - word: the word goes here
+#    type: is it a noun, verb or adjective
+#    definition_list:
+#      - text: this is the first definition of the word
+#        in_use: this is _the word_ used in a sentence
+#      - text: this is the second definition of the word
+#        in_use: this is _the second word_ used in a sentence
 
-- word: contribution
-  type: noun
-  definition_list:
-    - text: funds, property or other resources given to a campaign
-      in_use: The company's CEO made a _contribution_ of $1,000 to the president's reelection campaign
+  - word: contribution
+    type: noun
+    definition_list:
+      - text: funds, property or other resources given to a campaign
+        in_use: The company's CEO made a _contribution_ of $1,000 to the president's reelection campaign
 
-- word: expenditure
-  type: noun
-  definition_list:
-    - text: something paid out or used on behalf of a campaign
-      in_use: The campaign reported an _expenditure_ of $1,000 on television advertising
+  - word: expenditure
+     type: noun
+     definition_list:
+       - text: something paid out or used on behalf of a campaign
+         in_use: The campaign reported an _expenditure_ of $1,000 on television advertising

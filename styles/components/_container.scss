@@ -1,5 +1,26 @@
+@use '../variables/colors';
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.border {
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  background: linear-gradient(
+    to right,
+    lighten(colors.$green, 20%),
+    colors.$green
+  );
+}
+
 .container {
   padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  background-color: white;
+  height: 100%;
   line-height: 1.4;
   @media (max-width: 480px) {
     padding: 0.75rem 0.75rem 0 0.75rem;

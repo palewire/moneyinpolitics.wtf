@@ -15,6 +15,12 @@ header {
       @media (max-width: 500px) {
         font-size: 30px;
       }
+      @media (max-width: 400px) {
+        font-size: 27px;
+      }
+      @media (max-width: 300px) {
+        font-size: 20px;
+      }
     }
     .description {
       font-family: fonts.$font-family-body;

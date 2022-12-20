@@ -1,0 +1,28 @@
+@use '../variables/fonts';
+@use '../variables/colors';
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.card {
+  padding: 0.75rem;
+  margin: 0 1rem 1rem 0;
+  border: 1px solid colors.$green;
+  min-width: 250px;
+  height: 250px;
+  .card--headline {
+    font-family: fonts.$font-family-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: colors.$green;
+    .card--type {
+      color: colors.$black;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}

@@ -9,7 +9,10 @@
   "dependencies": {
     "@datagraphics/baker": "^0.44.0",
     "@datagraphics/delivery": "^0.6.0",
-    "intersection-observer": "^0.12.0"
+    "@types/d3-fetch": "^3.0.1",
+    "d3-fetch": "^3.0.1",
+    "intersection-observer": "^0.12.0",
+    "svelte": "^3.55.0"
   },
   "devDependencies": {
     "@datagraphics/prettier-config": "^2.0.0",

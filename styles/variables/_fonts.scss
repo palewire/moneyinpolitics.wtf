@@ -1,8 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
 
-$font-family-serif: 'Playfair Display', serif;
+@font-face {
+  font-family: 'Wremena';
+  src: static-url('./assets/fonts/WremenaRegular/WremenaRegular.woff')
+    format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Wremena';
+  src: static-url('./assets/fonts/WremenaLight/WremenaLight.woff')
+    format('woff');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Wremena';
+  src: static-url('./assets/fonts/WremenaBold/WremenaBold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+$font-family-serif: 'Wremena', serif;
 $font-family-sans: 'IBM Plex Sans', sans-serif;
 $font-family-mono: 'IBM Plex Mono', monospace;
 

@@ -18,6 +18,9 @@ header {
       @media (max-width: 400px) {
         font-size: 27px;
       }
+      @media (max-width: 360px) {
+        font-size: 24px;
+      }
       @media (max-width: 300px) {
         font-size: 20px;
       }
@@ -29,6 +32,12 @@ header {
       font-size: 20px;
       @media (max-width: 600px) {
         font-size: 16px;
+      }
+      @media (max-width: 360px) {
+        font-size: 15px;
+      }
+      @media (max-width: 300px) {
+        font-size: 14px;
       }
     }
   }

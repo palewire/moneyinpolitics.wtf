@@ -1,4 +1,6 @@
-America's most comprehensive dictionary of political fundraising jargon. Made by and for data journalists
+# MONEYINPOLITICS.wtf
+
+America's most comprehensive dictionary of campaign finance jargon. Made by and for data journalists
 
 ## Contributing
 

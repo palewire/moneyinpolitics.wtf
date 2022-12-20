@@ -24,6 +24,13 @@
   }
   display: flex;
   flex-direction: column;
+  a {
+    text-decoration: none;
+    color: colors.$green;
+  }
+  a:hover {
+    color: lighten(colors.$green, 33%);
+  }
   .card--headline {
     font-family: fonts.$font-family-serif;
     font-size: 20px;

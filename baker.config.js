@@ -1,6 +1,12 @@
-var slugify = require('slugify');
-
 const entrypoints = ['app'];
+
+const slugifyFunc = (str) =>
+  str
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s-]/g, '')
+    .replace(/[\s_-]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 
 export default {
   domain: 'https://moneyinpolitics.wtf/',
@@ -9,6 +15,11 @@ export default {
   }.js`,
   pathPrefix:
     process.env.BAKER_PATH_PREFIX || process.env.DELIVERY_BASE_PATH || '/',
+  nunjucksFilters: {
+    slugify(value) {
+      return slugifyFunc(value);
+    },
+  },
   createPages(createPage, data) {
     const wordList = data.dictionary.word_list;
     createPage('dictionary.json.njk', '/api/dictionary.json', {
@@ -16,7 +27,7 @@ export default {
     });
     for (const d of wordList) {
       const template = 'word-detail.html';
-      const url = `/${slugify(d.word, { lower: true, strict: true })}/`;
+      const url = `/${slugifyFunc(d.word)}/`;
       // d.title = `${d.word} - moneyinpolitics.wtf`
       // d.description = d.definition_list[0].text;
       // d.seo_title = `${d.word} - moneyinpolitics.wtf`;

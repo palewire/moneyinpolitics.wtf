@@ -14,10 +14,10 @@ word_list:
     type: noun
     definition_list:
       - text: funds, property or other resources given to a campaign
-        in_use: "The company's CEO made a _contribution_ of $1,000 to the president's reelection campaign"
+        in_use: "The company's CEO made a contribution of $1,000 to the president's reelection campaign"
 
   - word: expenditure
     type: noun
     definition_list:
       - text: something paid out or used on behalf of a campaign
-        in_use: The campaign reported an _expenditure_ of $1,000 on television advertising
+        in_use: The campaign reported an expenditure of $1,000 on television advertising

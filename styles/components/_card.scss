@@ -12,17 +12,46 @@
   padding: 0.75rem;
   margin: 0 1rem 1rem 0;
   border: 1px solid colors.$green;
-  min-width: 250px;
-  height: 250px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  width: 250px;
+  height: 150px;
   .card--headline {
     font-family: fonts.$font-family-serif;
     font-size: 20px;
     font-weight: 700;
     color: colors.$green;
+    dt.word {
+      display: inline;
+    }
     .card--type {
-      color: colors.$black;
+      font-family: fonts.$font-family-serif;
       font-size: 16px;
       font-weight: 400;
+      color: colors.$black;
+    }
+  }
+  .card--body {
+    font-family: fonts.$font-family-sans;
+    font-size: 16px;
+    font-weight: 400;
+    color: colors.$black;
+    padding: 0.5rem 0;
+  }
+  .card--actions {
+    font-family: fonts.$font-family-sans;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid colors.$gray;
+    .card--action-item {
+      display: inline;
+    }
+    .card--supplemental {
+      display: inline;
+      float: right;
     }
   }
 }

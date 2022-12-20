@@ -12,14 +12,16 @@
     "@types/d3-fetch": "^3.0.1",
     "d3-fetch": "^3.0.1",
     "intersection-observer": "^0.12.0",
-    "svelte": "^3.55.0"
+    "svelte": "^3.55.0",
+    "svelte-material-icons": "^2.0.4"
   },
   "devDependencies": {
     "@datagraphics/prettier-config": "^2.0.0",
     "@types/node": "^14.17.20",
     "@vercel/git-hooks": "^1.0.0",
     "lint-staged": "^11.1.2",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "svelte-google-materialdesign-icons": "^0.2.7"
   },
   "prettier": "@datagraphics/prettier-config",
   "lint-staged": {

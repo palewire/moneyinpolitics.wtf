@@ -285,3 +285,12 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item;
 }
+
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  margin-inline-start: 0;
+}

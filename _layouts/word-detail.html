@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block styles -%}
+<link rel="stylesheet" href="{% static 'styles/app.scss' %}">
+{% endblock styles -%}
+
+{% block content %}
+<article>
+  {{ obj.word }}
+</article>
+{% endblock content %}

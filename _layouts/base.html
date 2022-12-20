@@ -15,8 +15,8 @@
   {% endblock meta %}
 
   {% block opengraph %}
-  <meta property="og:title" content="{{ meta.social_headline }}">
-  <meta property="og:description" content="{{ meta.social_description }}">
+  <meta property="og:title" content="{{ meta.seo_headline }}">
+  <meta property="og:description" content="{{ meta.seo_description }}">
   <meta property="og:url" content="{{ page.absoluteUrl }}">
   <meta property="og:image" content="{% staticabsolute meta.social_image %}">
   <meta property="og:type" content="article">
@@ -25,8 +25,8 @@
   {% endblock opengraph %}
 
   {% block twitter %}
-  <meta property="twitter:title" content="{{ meta.social_headline }}">
-  <meta property="twitter:description" content="{{ meta.social_description }}">
+  <meta property="twitter:title" content="{{ meta.seo_headline }}">
+  <meta property="twitter:description" content="{{ meta.seo_description }}">
   <meta property="twitter:url" content="{{ page.absoluteUrl }}">
   <meta property="twitter:image" content="{% staticabsolute meta.social_image %}">
   <meta property="twitter:card" content="summary_large_image">

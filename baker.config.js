@@ -1,7 +1,6 @@
-const entrypoints = [
-  // Add more script entrypoints here as needed
-  'app',
-];
+var slugify = require('slugify');
+
+const entrypoints = ['app'];
 
 export default {
   domain: 'https://moneyinpolitics.wtf/',
@@ -10,18 +9,20 @@ export default {
   }.js`,
   pathPrefix:
     process.env.BAKER_PATH_PREFIX || process.env.DELIVERY_BASE_PATH || '/',
-  // An example of how creating dynamic pages, as described in the README
   createPages(createPage, data) {
-    console.log(data.dictionary.word_list);
+    const wordList = data.dictionary.word_list;
     createPage('dictionary.json.njk', '/api/dictionary.json', {
-      object_list: JSON.stringify(data.dictionary.word_list, null, 2),
+      object_list: JSON.stringify(wordList, null, 2),
     });
-    // const pageList = data.example;
-    // for (const d of pageList) {
-    //   const template = 'year-detail.html';
-    //   const url = `${d.year}`;
-    //   const context = { obj: d };
-    //   createPage(template, url, context);
-    // }
+    for (const d of wordList) {
+      const template = 'word-detail.html';
+      const url = `/${slugify(d.word, { lower: true, strict: true })}/`;
+      // d.title = `${d.word} - moneyinpolitics.wtf`
+      // d.description = d.definition_list[0].text;
+      // d.seo_title = `${d.word} - moneyinpolitics.wtf`;
+      // d.seo_description = d.definition_list[0].text;
+      const context = { obj: d };
+      createPage(template, url, context);
+    }
   },
 };

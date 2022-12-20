@@ -10,17 +10,7 @@
 
 {% block content %}
 <article>
-  <header>
-    <div class="masthead">
-      <h1>{{ meta.headline }}</h1>
-      <div class="description">{{ meta.description }}</div>
-    </div>
-    <div class="search">
-      <form>
-        <input type="text">
-      </form>
-    </div>
-  </header>
+  {% include 'header.html' %}
   <section id="card-container" class="card-container"></section>
 </article>
 {% endblock content %}

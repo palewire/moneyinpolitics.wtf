@@ -32,7 +32,7 @@ export default {
       // d.description = d.definition_list[0].text;
       // d.seo_title = `${d.word} - moneyinpolitics.wtf`;
       // d.seo_description = d.definition_list[0].text;
-      const context = { obj: d };
+      const context = { obj: d, meta: data.meta };
       createPage(template, url, context);
     }
   },

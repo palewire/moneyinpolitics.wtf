@@ -7,13 +7,13 @@ header {
   .masthead {
     h1 {
       margin: 0 0 0.2rem 0;
-      font-size: 38px;
+      font-size: 42px;
       letter-spacing: 0.05rem;
       @media (max-width: 600px) {
-        font-size: 32px;
+        font-size: 36px;
       }
-      @media (max-width: 400px) {
-        font-size: 25px;
+      @media (max-width: 500px) {
+        font-size: 30px;
       }
     }
     .description {
@@ -22,10 +22,7 @@ header {
       margin: 0;
       font-size: 20px;
       @media (max-width: 600px) {
-        font-size: 18px;
-      }
-      @media (max-width: 400px) {
-        font-size: 15px;
+        font-size: 16px;
       }
     }
   }

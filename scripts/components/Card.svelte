@@ -27,12 +27,14 @@
           {/each}
         </div>
       </dd>
-      <div class="card--actions">
-        <div class="card--action-item card--expand">Expand</div>
-        <div class="card--supplemental">
-          <div class="card--action-item card--flag"><Flag size=15 /></div>
-          <div class="card--action-item card--share"><Share size=15 /></div>
-        </div>
+    </div>
+    <div class="card--actions">
+      <div class="card--actions-border">
+      <div class="card--action-item card--expand">Expand</div>
+      <div class="card--supplemental">
+        <div class="card--action-item card--flag"><Flag size=15 /></div>
+        <div class="card--action-item card--share"><Share size=15 /></div>
+      </div>
       </div>
     </div>
 </div>

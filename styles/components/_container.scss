@@ -11,10 +11,23 @@ body {
   width: 100vw;
   padding: 10px;
   background: linear-gradient(
-    to right,
-    lighten(colors.$green, 20%),
-    colors.$green
+    var(--angle),
+    lighten(colors.$green, 40%),
+    darken(colors.$green, 10%)
   );
+  animation: 5s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .container {

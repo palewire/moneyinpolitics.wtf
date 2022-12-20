@@ -23,7 +23,7 @@ $border-width: 6px;
   justify-content: flex-start;
   width: calc(100% - $border-width * 2);
   height: calc(100% - $border-width * 2);
-  padding: 0.33rem 1.15rem 0.33rem 1.15rem;
+  padding: 1.15rem;
   background-color: white;
   line-height: 1.4;
   @media (max-width: 480px) {

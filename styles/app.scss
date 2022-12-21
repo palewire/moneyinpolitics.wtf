@@ -13,3 +13,11 @@
 @use './components/prose';
 @use './components/header';
 @use './components/card';
+
+a {
+  text-decoration: none;
+  color: colors.$green;
+}
+a:hover {
+  color: lighten(colors.$green, 33%);
+}

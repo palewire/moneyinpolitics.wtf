@@ -46,7 +46,7 @@
   }
   sup {
     font-size: 0.8rem;
-    margin: 0 0.167rem 0 0.167rem;
+    margin: 0 0.1rem 0 0.1rem;
     font-weight: fonts.$font-weight-headline;
     color: colors.$black;
   }
@@ -114,6 +114,10 @@
   }
   .card--type {
     font-size: 18px;
+  }
+  sup {
+    font-size: 0.8rem;
+    margin: 0 0.167rem 0 0.167rem;
   }
   .card--actions {
     margin-top: 1em;

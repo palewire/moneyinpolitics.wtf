@@ -7,6 +7,32 @@
 {% block content %}
 <article>
   {% include 'header.html' %}
-  {{ obj.word }}
+  <div class="search">
+    <input type="text">
+  </div>
+  <div class="card card--big">
+    <div class="card--headline">
+      <dt class="word">{{ obj.word }}</dt>
+      <span class="card--type">{{ obj.type }}</span>
+    </div>
+    <div class="card--body">
+      <dd class="card--definition-list">
+        <div class="card--definition">
+          {% for definition in obj.definition_list %}
+            <div class="card--definition-text"><sup>{{ loop.index }}</sup> {{ definition.text }}</div>
+            <div class="card--definition-in-use">{{ definition.in_use }}</div>
+          {% endfor %}
+        </div>
+      </dd>
+    </div>
+    <div class="card--actions">
+      <div class="card--actions-border">
+      <div class="card--supplemental">
+        <div class="card--action-item card--flag">Flag</div>
+        <div class="card--action-item card--share">Share</div>
+      </div>
+      </div>
+    </div>
+</div>
 </article>
 {% endblock content %}

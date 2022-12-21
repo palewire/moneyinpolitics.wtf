@@ -28,10 +28,7 @@
     <div class="card--body">
       <dd class="card--definition-list">
         <div class="card--definition">
-          {#each definitionList as definition}
-            <div class="card--definition-text">{ definition.text }</div>
-            <!-- <div class="card--definition-in-use">{ definition.in_use }</div> -->
-          {/each}
+          <div class="card--definition-text"><sup>1</sup> { definitionList[0].text }</div>
         </div>
       </dd>
     </div>

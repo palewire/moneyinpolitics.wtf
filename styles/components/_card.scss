@@ -104,9 +104,10 @@
 }
 
 .card.card--big {
-  margin: 2em 0;
+  margin: 1em 0;
   padding: 1rem;
-  width: 500px;
+  width: auto;
+  max-width: 700px;
   height: auto;
   .card--headline {
     font-size: 28px;

@@ -36,7 +36,7 @@ export default {
         update_date: data.meta.update_date,
         social_image: data.meta.social_image,
         headline: data.meta.headline,
-        description: obj.definition_list[0].text,
+        description: data.meta.description,
         seo_headline: `${obj.word} - ${data.meta.seo_headline}`,
         seo_description: obj.definition_list[0].text,
       };

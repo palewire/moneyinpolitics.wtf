@@ -36,8 +36,8 @@
       <div class="card--actions-border">
       <div class="card--action-item card--expand"><a href="/{ slugify(word) }/">Expand</a></div>
       <div class="card--supplemental">
-        <div class="card--action-item card--flag"><Flag size=15 /></div>
-        <div class="card--action-item card--share"><Share size=15 /></div>
+        <div class="card--action-item card--flag"><a href="/"><Flag size=15 /></a></div>
+        <div class="card--action-item card--share"><a href="/"><Share size=15 /></a></div>
       </div>
       </div>
     </div>

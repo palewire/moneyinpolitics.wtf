@@ -25,15 +25,22 @@ export default {
     createPage('dictionary.json.njk', '/api/dictionary.json', {
       object_list: JSON.stringify(wordList, null, 2),
     });
-    for (const d of wordList) {
+    for (const obj of wordList) {
       const template = 'word-detail.html';
-      const url = `/${slugifyFunc(d.word)}/`;
-      // d.title = `${d.word} - moneyinpolitics.wtf`
-      // d.description = d.definition_list[0].text;
-      // d.seo_title = `${d.word} - moneyinpolitics.wtf`;
-      // d.seo_description = d.definition_list[0].text;
-      const context = { obj: d, meta: data.meta };
-      createPage(template, url, context);
+      const url = `/${slugifyFunc(obj.word)}/`;
+      const meta = {
+        site_name: data.meta.site_name,
+        locale: data.meta.site_name,
+        byline: data.meta.byline,
+        pub_date: data.meta.pub_date,
+        update_date: data.meta.update_date,
+        social_image: data.meta.social_image,
+        headline: data.meta.headline,
+        description: obj.definition_list[0].text,
+        seo_headline: `${obj.word} - ${data.meta.seo_headline}`,
+        seo_description: obj.definition_list[0].text,
+      };
+      createPage(template, url, { obj, meta });
     }
   },
 };

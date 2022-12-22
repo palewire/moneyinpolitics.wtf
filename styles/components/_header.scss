@@ -12,18 +12,22 @@ header {
       letter-spacing: 0.05rem;
       @media (max-width: 600px) {
         font-size: 36px;
+        margin-top: 0.5rem;
       }
       @media (max-width: 500px) {
         font-size: 30px;
       }
       @media (max-width: 400px) {
-        font-size: 27px;
+        font-size: 29px;
       }
       @media (max-width: 360px) {
-        font-size: 24px;
+        font-size: 26px;
+      }
+      @media (max-width: 330px) {
+        font-size: 23px;
       }
       @media (max-width: 300px) {
-        font-size: 20px;
+        font-size: 21px;
       }
     }
     .description {

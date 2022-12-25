@@ -1,6 +1,6 @@
 name: Add a word
 description: Suggest a new definition for inclusion
-title: "[Add a word]: "
+title: "Add a word"
 labels: ["enhancement"]
 assignees:
   - palewire
@@ -51,8 +51,6 @@ body:
     attributes:
       label: Example #2
       description: If provided, illustrate the second definition by using it in a sentence
-    validations:
-      required: true
   - type: checkboxes
     id: terms
     attributes:

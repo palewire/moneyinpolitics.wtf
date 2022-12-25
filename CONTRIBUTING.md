@@ -7,6 +7,9 @@ The following is a set of guidelines for contributing to this repository and the
 - [Code of conduct](#code-of-conduct)
 - [About this site](#about-this-site)
 - [How definitions are stored](#how-definitions-are-stored)
+- [Adding a definition](#adding-a-definition)
+- [Reporting an error](#reporting-an-error)
+- [Installing the repository](#installing-the-repository)
 
 ## Code of conduct
 
@@ -82,3 +85,21 @@ If you're unfamiliar with GitHub's system for proposing changes, you can follow 
 ## Reporting an error
 
 You can report mistakes and suggest changes to existing definitions by editing the [`dictionary.yaml`](https://github.com/palewire/moneyinpolitics.wtf/blob/main/_data/dictionary.yaml) file or [submitting an issue](https://github.com/palewire/moneyinpolitics.wtf/issues) to our tracker. If you're unable to to utilize those techniques, contact Ben Welsh at [b@palewi.re](mailto:b@palewi.re).
+
+## Installing the repository
+
+First, [fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the repository. [Clone it](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) on your computer or [open it in GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started/quickstart).
+
+Now ensure the dependencies are installed. You will need [Node.js](https://nodejs.org/en/) version 14.x or above and the [node package manager](<https://en.wikipedia.org/wiki/Npm_(software)>) for this to work.
+
+```bash
+npm install
+```
+
+Start the test server
+
+```bash
+npm start
+```
+
+Visit [`localhost:3000`](https://localhost:3000/) in your browser, where you should see the site rendered. As you make changes to the files they should appear on the site. As with any other repository, you can commit your edits, push to your fork and submit a pull request.

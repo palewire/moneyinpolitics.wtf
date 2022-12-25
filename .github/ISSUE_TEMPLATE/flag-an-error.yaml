@@ -1,0 +1,33 @@
+name: Flag an error
+description: Point out something that's wrong
+title: "Flag an error"
+labels: ["bug"]
+assignees:
+  - palewire
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The process for proposing edits is spelled out in [our contributor's guide](https://github.com/palewire/moneyinpolitics.wtf/blob/main/CONTRIBUTING.md). Users who aren't comfortable suggesting the change via a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) can submit their report here, where it will be reviewed by the project's maintainers.
+  - type: input
+    id: word
+    attributes:
+      label: The word
+      description: Where do you see a problem?
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: Error report
+      description: Tell us what's wrong
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of conduct](https://github.com/palewire/moneyinpolitics.wtf/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

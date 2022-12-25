@@ -25,6 +25,7 @@ export default {
     createPage('dictionary.json.njk', '/api/dictionary.json', {
       object_list: JSON.stringify(wordList, null, 2),
     });
+    let urlList = ['/'];
     for (const obj of wordList) {
       const template = 'word-detail.html';
       const url = `/${slugifyFunc(obj.word)}/`;
@@ -41,6 +42,11 @@ export default {
         seo_description: obj.definition_list[0].text,
       };
       createPage(template, url, { obj, meta });
+      urlList.push(url);
     }
+    // Make sitemap
+    createPage('sitemap.xml.njk', `sitemap.xml`, {
+      urlList,
+    });
   },
 };

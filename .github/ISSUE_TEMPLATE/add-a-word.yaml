@@ -31,26 +31,26 @@ body:
   - type: input
     id: def-1
     attributes:
-      label: Definition #1
+      label: Definition 1
       description: Succinctly define what the word means
     validations:
       required: true
   - type: input
     id: ex-1
     attributes:
-      label: Example #1
+      label: Example 1
       description: Illustrate the definition by using the word in the sentence
     validations:
       required: true
   - type: input
     id: def-2
     attributes:
-      label: Definition #2
+      label: Definition 2
       description: If the word has a second meaning, enter it here
   - type: input
     id: ex-2
     attributes:
-      label: Example #2
+      label: Example 2
       description: If provided, illustrate the second definition by using it in a sentence
   - type: checkboxes
     id: terms

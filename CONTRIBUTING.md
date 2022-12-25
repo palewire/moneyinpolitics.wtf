@@ -80,7 +80,7 @@ An example of a simple implementation would look like this:
 
 To add a definition, you should edit the [`dictionary.yaml`](https://github.com/palewire/moneyinpolitics.wtf/blob/main/_data/dictionary.yaml) file and add a new YAML entry to the file. The only technical requirement is that it appear indented by two spaces below the `word_list` variable defined in the first line.
 
-If you're unfamiliar with GitHub's system for proposing changes, you can follow the [instructions for editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-another-users-repository). Or you can [create an issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) in [our issue tracker](https://github.com/palewire/moneyinpolitics.wtf/issues) and submit your definition in the text box.
+If you're unfamiliar with GitHub's system for proposing changes, you can follow the [instructions for editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-another-users-repository). Or you can [create an issue](https://github.com/palewire/moneyinpolitics.wtf/issues/new?assignees=palewire&labels=enhancement&template=add-a-word.yaml&title=Add+a+word) and submit your definition via a form.
 
 ## Reporting an error
 

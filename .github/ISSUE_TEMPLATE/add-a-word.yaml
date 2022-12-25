@@ -1,0 +1,63 @@
+name: Add a word
+description: Suggest a new definition for inclusion
+title: "[Add a word]: "
+labels: ["enhancement"]
+assignees:
+  - palewire
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The process for adding a word is spelled out in [our contributor's guide](https://github.com/palewire/moneyinpolitics.wtf/blob/main/CONTRIBUTING.md). Users who aren't comfortable suggesting the change via a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) can submit their word here, where it will be reviewed by the project's maintainers.
+  - type: input
+    id: word
+    attributes:
+      label: The word
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      description: What kind of work is this?
+      options:
+        - noun
+        - verb
+        - adjective
+        - other
+    validations:
+      required: true
+  - type: input
+    id: def-1
+    attributes:
+      label: Definition #1
+      description: Succinctly define what the word means
+    validations:
+      required: true
+  - type: input
+    id: ex-1
+    attributes:
+      label: Example #1
+      description: Illustrate the definition by using the word in the sentence
+    validations:
+      required: true
+  - type: input
+    id: def-2
+    attributes:
+      label: Definition #2
+      description: If the word has a second meaning, enter it here
+  - type: input
+    id: ex-2
+    attributes:
+      label: Example #2
+      description: If provided, illustrate the second definition by using it in a sentence
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of conduct](https://github.com/palewire/moneyinpolitics.wtf/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

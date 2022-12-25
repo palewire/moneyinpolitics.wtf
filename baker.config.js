@@ -19,6 +19,9 @@ export default {
     slugify(value) {
       return slugifyFunc(value);
     },
+    urlescape(value) {
+      return encodeURIComponent(value);
+    }
   },
   createPages(createPage, data) {
     const wordList = data.dictionary.word_list;

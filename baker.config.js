@@ -45,8 +45,10 @@ export default {
       urlList.push(url);
     }
     // Make sitemap
-    createPage('sitemap.xml.njk', `sitemap.xml`, {
+    createPage('sitemap.xml.njk', 'sitemap.xml', {
       urlList,
     });
+    // Make robots.txt
+    createPage('robots.txt.njk', 'robots.txt');
   },
 };

@@ -13,6 +13,7 @@ body:
     id: word
     attributes:
       label: The word
+      description: What's the word you want to add?
     validations:
       required: true
   - type: dropdown

@@ -93,6 +93,9 @@
       display: inline;
       float: right;
     }
+    .card--share a:hover {
+      cursor: pointer;
+    }
   }
 }
 

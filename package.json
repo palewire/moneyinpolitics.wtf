@@ -12,6 +12,7 @@
     "@types/d3-fetch": "^3.0.1",
     "d3-fetch": "^3.0.1",
     "intersection-observer": "^0.12.0",
+    "share-api-polyfill": "^1.1.1",
     "slugify": "^1.6.5",
     "svelte": "^3.55.0",
     "svelte-material-icons": "^2.0.4"

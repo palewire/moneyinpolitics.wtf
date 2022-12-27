@@ -23,7 +23,7 @@ This site is run by [Ben Welsh](https://palewi.re/who-is-ben-welsh/). You can re
 
 The definitions published by the site are stored in the [`dictionary.yaml`](https://github.com/palewire/moneyinpolitics.wtf/blob/main/_data/dictionary.yaml) file in the `_data` directory.
 
-Note that each file’s name ends with `.yaml`. That tells computers that the file is expected to contain data structured in YAML format.
+Note that the file’s name ends with `.yaml`. That tells computers that it is expected to contain data structured in YAML format.
 
 [YAML](https://en.wikipedia.org/wiki/YAML) is a data serialization language. It is used to represent data structures in a human-readable and easy-to-write format. YAML stands for “YAML Ain’t Markup Language,” because it is not a markup language like HTML or XML (and because nerds like inventing [silly acronyms](https://en.wikipedia.org/wiki/Backronym).)
 

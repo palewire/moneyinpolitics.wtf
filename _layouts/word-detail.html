@@ -34,12 +34,25 @@
             Flag
           </a>
         </div>
-        <div class="card--action-item card--share">
-          <a href="">
+        <div id="card--share" class="card--action-item card--share display-none">
+          <a>
             <svg width="15" height="15" viewBox="0 0 24 24"><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" fill="currentColor"/></svg>
             Share
           </a>
         </div>
+        <script>
+          if (navigator.share) {
+            const btn = document.getElementById("card--share");
+            btn.classList.remove("display-none");
+            const a = btn.getElementsByTagName('a')[0];
+            a.addEventListener("click", function(e) {
+              const url = 'https://moneyinpolitics.wtf/{{ obj.word|slugify }}/';
+              navigator.share({
+                url: `https://moneyinpolitics.wtf${url}`,
+              });
+            })
+          }
+        </script>
       </div>
       </div>
     </div>

@@ -48,7 +48,7 @@
             a.addEventListener("click", function(e) {
               const url = 'https://moneyinpolitics.wtf/{{ obj.word|slugify }}/';
               navigator.share({
-                url: `https://moneyinpolitics.wtf${url}`,
+                url,
               });
             })
           }

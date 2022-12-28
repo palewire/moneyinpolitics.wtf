@@ -1,4 +1,4 @@
-const entrypoints = ['app'];
+const entrypoints = ['index', 'detail'];
 
 const slugifyFunc = (str) =>
   str
@@ -21,7 +21,7 @@ export default {
     },
     urlescape(value) {
       return encodeURIComponent(value);
-    }
+    },
   },
   createPages(createPage, data) {
     const wordList = data.dictionary.word_list;

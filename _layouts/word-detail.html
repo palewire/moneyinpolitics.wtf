@@ -4,6 +4,10 @@
 <link rel="stylesheet" href="{% static 'styles/app.scss' %}">
 {% endblock styles -%}
 
+{% block scripts %}
+{% script 'detail' %}
+{% endblock scripts %}
+
 {% block content %}
 <article>
   {% include 'header.html' %}

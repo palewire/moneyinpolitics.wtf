@@ -11,9 +11,7 @@
 {% block content %}
 <article>
   {% include 'header.html' %}
-  <div class="search">
-    <input type="text">
-  </div>
+  <section id="card-container" class="card-container"></section>
   <div class="card card--big">
     <div class="card--headline">
       <dt class="word">{{ obj.word }}</dt>
@@ -48,7 +46,7 @@
       </div>
     </div>
 </div>
-<div class="back-arrow">
+<div class="card--big back-arrow">
   <a href="/">← Back to full dictionary</a>
 </div>
 </article>

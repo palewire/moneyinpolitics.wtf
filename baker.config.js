@@ -12,7 +12,7 @@ export default {
   domain: 'https://moneyinpolitics.wtf/',
   entrypoints: `scripts/${
     entrypoints.length > 1 ? `{${entrypoints.join(',')}}` : entrypoints[0]
-  }.js`,
+  }.ts`,
   pathPrefix:
     process.env.BAKER_PATH_PREFIX || process.env.DELIVERY_BASE_PATH || '/',
   nunjucksFilters: {

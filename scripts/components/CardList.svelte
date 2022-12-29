@@ -1,5 +1,6 @@
 <script>
   import { writable, derived } from 'svelte/store';
+  import AboutCard from './AboutCard.svelte';
   import Card from './Card.svelte'; 
 
   /**
@@ -36,4 +37,5 @@
   {#each $filtered as obj}
     <Card word={obj.word} type={obj.type} definitionList={ obj.definition_list }></Card>
   {/each}
+  <AboutCard></AboutCard>
 </dl>

@@ -44,19 +44,6 @@
             Share
           </a>
         </div>
-        <script>
-          if (navigator.share) {
-            const btn = document.getElementById("card--share");
-            btn.classList.remove("display-none");
-            const a = btn.getElementsByTagName('a')[0];
-            a.addEventListener("click", function(e) {
-              const url = 'https://moneyinpolitics.wtf/{{ obj.word|slugify }}/';
-              navigator.share({
-                url,
-              });
-            })
-          }
-        </script>
       </div>
       </div>
     </div>

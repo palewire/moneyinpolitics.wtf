@@ -22,6 +22,20 @@
    */
    export let definitionList;
 
+  const truncate = (str, max = 10) => {
+    const array = str.trim().split(' ');
+    const ellipsis = array.length > max ? '...' : '';
+    return array.slice(0, max).join(' ') + ellipsis;
+  };
+  const getShortDefinition = (arr) => {
+    if (arr.length > 0) {
+      return truncate(arr[0].text);
+    } else {
+      return '';
+    }
+  }
+  $: shortDefinition = getShortDefinition(definitionList);
+
   const url = `/${slugify(word)}/`;
   const handleShare = function () {
     if (navigator.share) {
@@ -32,12 +46,12 @@
   };
 </script>
 
-<div class="card">
+<div class="card card--search">
     <div class="card--headline"><dt class="word"><a href="/{ slugify(word) }/">{ word }</a></dt> <span class="card--type">{ type }</span></div>
     <div class="card--body">
       <dd class="card--definition-list">
         <div class="card--definition">
-          <div class="card--definition-text"><sup>1</sup> { definitionList[0].text }</div>
+          <div class="card--definition-text"><sup>1</sup> { shortDefinition }</div>
         </div>
       </dd>
     </div>

@@ -10,6 +10,12 @@ word_list:
 #      - text: this is the second definition of the word
 #        in_use: this is _the second word_ used in a sentence
 
+  - word: example
+    type: noun
+    definition_list:
+      - text: this is a relatively long string of text that I'm putting here just so I can test it out and see how the site handles rendering it on the page. Here's hoping for the best.
+        in_use: this is a relatively long string of text that I'm putting here just so I can test it out and see how the site handles rendering it on the page. Here's hoping for the best.
+
   - word: contribution
     type: noun
     definition_list:

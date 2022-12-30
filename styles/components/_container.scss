@@ -12,37 +12,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 $border-width: 6px;
 
 .container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  display: block;
   width: calc(100% - $border-width * 2);
-  height: calc(100% - $border-width * 2);
+  min-height: calc(100% - $border-width * 2);
+  margin: $border-width;
   padding: 1.15rem;
   background-color: white;
   line-height: 1.4;
+  z-index: 1;
   @media (max-width: 480px) {
     padding: 0.33rem 0.75rem 0.33rem 0.75rem;
   }
 }
 
 .gradient-border {
-  background: white;
-  position: relative;
-}
-
-.gradient-border:after {
-  content: '';
-  position: absolute;
-  top: calc(-1 * $border-width);
-  left: calc(-1 * $border-width);
-  height: calc(100% + $border-width * 2);
-  width: calc(100% + $border-width * 2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     60deg,
     #07b39b,
@@ -51,9 +45,8 @@ $border-width: 6px;
     colors.$green,
     darken(colors.$green, 10%)
   );
-  z-index: -1;
-  animation: animatedgradient 3s ease alternate infinite;
-  background-size: 300% 300%;
+  //z-index: -1;
+  //animation: animatedgradient 3s ease alternate infinite;
 }
 
 @keyframes animatedgradient {

@@ -45,8 +45,9 @@ $border-width: 6px;
     colors.$green,
     darken(colors.$green, 10%)
   );
-  //z-index: -1;
-  //animation: animatedgradient 3s ease alternate infinite;
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
 }
 
 @keyframes animatedgradient {

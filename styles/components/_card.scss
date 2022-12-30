@@ -130,3 +130,13 @@
   font-size: 14px;
   margin-left: 0.25rem;
 }
+
+.card--about {
+  background-color: colors.$green;
+  .card--body {
+    color: colors.$white;
+  }
+  a {
+    color: colors.$white;
+  }
+}

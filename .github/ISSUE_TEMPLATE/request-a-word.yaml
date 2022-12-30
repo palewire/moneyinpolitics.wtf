@@ -1,0 +1,32 @@
+name: Request a word
+description: Ask the maintainers to define a word
+title: "Request a word"
+labels: ["enhancement"]
+assignees:
+  - palewire
+body:
+  - type: markdown
+    attributes:
+      value: We want to help. If you're looking for a definition and can't find us in our site, let us know so we can add it.
+  - type: input
+    id: word
+    attributes:
+      label: The word
+      description: What's the word you need a definition for?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Where have you encountered it?
+      description: Tell us the context
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of conduct](https://github.com/palewire/moneyinpolitics.wtf/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

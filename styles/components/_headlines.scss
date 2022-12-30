@@ -1,10 +1,17 @@
 @use '../variables/colors';
 @use '../variables/fonts';
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: fonts.$font-family-headline;
   font-weight: fonts.$font-weight-headline;
-  font-size: 38px;
   margin: 0;
-  color: colors.$green;
+}
+
+h1 {
+  font-size: 38px;
 }

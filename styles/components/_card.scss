@@ -53,7 +53,9 @@
     font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
-    color: colors.$green;
+    a {
+      color: colors.$green;
+    }
     dt.word {
       display: inline;
     }

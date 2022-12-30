@@ -1,4 +1,4 @@
-const entrypoints = ['index', 'detail'];
+const entrypoints = ['index', 'detail', 'about'];
 
 const slugifyFunc = (str) =>
   str

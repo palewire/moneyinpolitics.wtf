@@ -15,7 +15,7 @@
     [term, items], 
     ([$term, $items]) => $items.filter(x => x.word.toLowerCase().includes($term.toLowerCase()))
   );
-  const cardList = Array.from(document.getElementsByClassName('card--big'));
+  const cardList = Array.from(document.getElementsByClassName('card--detail'));
 
   let val = '';
   $: term.set(val);
@@ -37,5 +37,7 @@
   {#each $filtered as obj}
     <Card word={obj.word} type={obj.type} definitionList={ obj.definition_list }></Card>
   {/each}
-  <AboutCard></AboutCard>
+  {#if !$term}
+    <AboutCard></AboutCard>
+  {/if}
 </dl>

@@ -10,9 +10,16 @@
 
 {% block content %}
 <article>
-  {% include 'header.html' %}
+  <header>
+    <div class="masthead">
+      <h1><a href="/">MONEYINPOLITICS.wtf</a></h1>
+      <div class="description">
+        America’s most comprehensive dictionary of campaign finance jargon
+      </div>
+    </div>
+  </header>
   <section id="card-container" class="card-container"></section>
-  <div class="card card--big">
+  <div class="card card--detail card--big">
     <div class="card--headline">
       <dt class="word">{{ obj.word }}</dt>
       <span class="card--type">{{ obj.type }}</span>
@@ -45,9 +52,21 @@
       </div>
       </div>
     </div>
-</div>
-<div class="card--big back-arrow">
-  <a href="/">← Back to full dictionary</a>
-</div>
+  </div>
+  <div class="card card--detail card--about">
+    <div class="card--headline"><a href="/about/">About</a></div>
+    <div class="card--body">
+      <dd class="card--definition-list">
+        <div class="card--definition">
+          <div class="card--definition-text">Who’s behind this site — and how you can contribute.</div>
+        </div>
+      </dd>
+    </div>
+    <div class="card--actions">
+      <div class="card--actions-border">
+        <div class="card--action-item card--expand"><a href="/about/">Learn more</a></div>
+      </div>
+    </div>
+  </div>
 </article>
 {% endblock content %}

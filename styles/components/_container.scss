@@ -8,8 +8,12 @@ body {
   padding: 0;
 }
 
+$border-width: 12px;
 .gradient-border {
-  border: colors.$green 6px solid;
+  border: colors.$green $border-width solid;
+  @media (max-width: 480px) {
+    border-width: $border-width * 0.66;
+  }
 }
 
 .container {

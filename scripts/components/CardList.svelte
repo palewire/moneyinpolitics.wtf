@@ -9,12 +9,26 @@
    export let dictionary;
    export let displayAll = true;
 
+  // Sort alphabetically
+  const sortByName = (a, b) => {
+    const aName = a.word.toLowerCase();
+    const bName = b.word.toLowerCase();
+    if (aName < bName) {
+      return -1;
+    }
+    if (aName > bName) {
+      return 1;
+    }
+    return 0;
+  };
+  dictionary.sort(sortByName);
+
   const term = writable('');
   const items = writable(dictionary);
   const filtered = derived(
     [term, items], 
     ([$term, $items]) => $items.filter(x => x.word.toLowerCase().includes($term.toLowerCase()))
-  );
+  )
   const cardList = Array.from(document.getElementsByClassName('card--detail'));
 
   let val = '';

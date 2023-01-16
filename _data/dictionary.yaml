@@ -28,6 +28,12 @@ word_list:
       - text: something paid out or used on behalf of a campaign
         in_use: The campaign reported an expenditure of $1,000 on television advertising
 
+  - word: itemize
+    type: verb
+    definition_list:
+      - text: to list out a contribution, expenditure, loan or other transaction in detail on a campaign filing, typically with the name, date and amount and other metadata linked to the event
+        in_use: The campaign is required to itemize all contributions over a certain amount
+
   - word: itemization
     type: noun
     definition_list:

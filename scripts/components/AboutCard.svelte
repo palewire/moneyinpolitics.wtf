@@ -1,4 +1,4 @@
-<div class="card card--about">
+<div class="card card--about card--green">
     <div class="card--headline"><a href="/about/">About</a></div>
     <div class="card--body">
       <dd class="card--definition-list">

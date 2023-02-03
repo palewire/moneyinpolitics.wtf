@@ -10,6 +10,12 @@ word_list:
 #      - text: this is the second definition of the word
 #        in_use: this is _the second word_ used in a sentence
 
+  - word: amendment
+    type: noun
+    definition_list:
+      - text: a change to a previous disclosure report submitted via a subsequent filing
+        in_used: "The campaign filed an amendment that corrected the amount of money Jane donated to the governor."
+
   - word: contribution
     type: noun
     definition_list:

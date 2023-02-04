@@ -28,6 +28,12 @@ word_list:
       - text: something paid out or used on behalf of a campaign
         in_use: The campaign reported an expenditure of $1,000 on television advertising
 
+  - word: FEC
+    type: noun
+    definition_list:
+      - text: an acronym for Federal Election Commission, the government agency that enforces federal campaign-finance laws and collects disclosure statements in presidential races and congressional contests
+        in_use: The FEC raised the limits on campaign donations Thursday, citing inflation
+
   - word: itemize
     type: verb
     definition_list:

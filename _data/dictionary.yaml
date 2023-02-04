@@ -45,3 +45,9 @@ word_list:
     definition_list:
       - text: a contribution, expenditure, loan or other transaction listed out in detail on a campaign filing, typically with the name, date and amount and other metadata linked to the event
         in_use: Campaign finance laws typically require the itemization of all contributions over a certain amount
+
+  - word: unitemized
+    type: adjective
+    definition_list:
+      - text: a type of transaction, such as a campaign donation, that is not detailed on a campaign filing, meaning that the identity of the party is withheld; typically occurs when the amount of money linked to the transaction falls below disclosure limits;
+        in_use: Jane's $7 check was not included in the senator's disclosure report, along with thousands of other unitemized donations

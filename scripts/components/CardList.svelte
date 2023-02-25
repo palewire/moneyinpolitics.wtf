@@ -1,6 +1,7 @@
 <script>
   import { writable, derived } from 'svelte/store';
   import AboutCard from './AboutCard.svelte';
+  import RequestCard from './RequestCard.svelte';
   import Card from './Card.svelte'; 
 
   /**
@@ -53,5 +54,8 @@
   {/each}
   {#if !$term}
     <AboutCard></AboutCard>
+  {/if}
+  {#if $term && $filtered.length == 0}
+    <RequestCard word={$term}></RequestCard>
   {/if}
 </dl>

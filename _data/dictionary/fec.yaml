@@ -2,4 +2,7 @@ word: FEC
 type: noun
 definition_list:
   - text: acronym for Federal Election Commission, the government agency that enforces federal campaign-finance laws and collects disclosure statements in presidential races and congressional contests
-    in_use: The FEC raised the limits on campaign donations Thursday, citing inflation
+    in_use:
+      - text: The FEC raised the limits on campaign donations Thursday, citing inflation
+        source:
+        url:

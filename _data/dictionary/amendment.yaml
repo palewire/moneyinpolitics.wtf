@@ -2,4 +2,7 @@ word: amendment
 type: noun
 definition_list:
   - text: a change to a previous disclosure report submitted via a subsequent filing
-    in_use: "The campaign filed an amendment that corrected the amount of money Jane donated to the governor."
+    in_use:
+      - text: "The campaign filed an amendment that corrected the amount of money Jane donated to the governor."
+        source:
+        url: 

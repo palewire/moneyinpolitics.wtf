@@ -2,4 +2,7 @@ word: contribution
 type: noun
 definition_list:
   - text: funds, property or other resources given to a campaign
-    in_use: "The company's CEO made a contribution of $1,000 to the president's reelection campaign"
+    in_use:
+      - text: "The company's CEO made a contribution of $1,000 to the president's reelection campaign"
+        source:
+        url:

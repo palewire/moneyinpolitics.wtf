@@ -2,8 +2,6 @@ name: Add a word
 description: Suggest a new definition for inclusion
 title: "Add a word"
 labels: ["enhancement"]
-assignees:
-  - palewire
 body:
   - type: markdown
     attributes:
@@ -20,7 +18,7 @@ body:
     id: type
     attributes:
       label: Type
-      description: What kind of work is this?
+      description: What kind of word is this?
       options:
         - noun
         - verb
@@ -39,7 +37,7 @@ body:
     id: ex-1
     attributes:
       label: Example 1
-      description: Illustrate the definition by using the word in the sentence
+      description: Illustrate the definition by providing an example of the word being used in a sentence. Please provide the text and the source URL.
     validations:
       required: true
   - type: input
@@ -51,7 +49,7 @@ body:
     id: ex-2
     attributes:
       label: Example 2
-      description: If provided, illustrate the second definition by using it in a sentence
+      description: If provided, illustrate the definition by providing an example of the word being used in a sentence. Please provide the text and the source URL.
   - type: checkboxes
     id: terms
     attributes:

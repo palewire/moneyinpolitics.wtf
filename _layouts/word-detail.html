@@ -29,7 +29,16 @@
         <div class="card--definition">
           {% for definition in obj.definition_list %}
             <div class="card--definition-text"><sup>{{ loop.index }}</sup> {{ definition.text|markdown }}</div>
-            <div class="card--definition-in-use">{{ definition.in_use|markdown }}</div>
+            {% for use in definition.in_use %}
+              <div class="card--definition-in-use">
+                <q>{{ use.text|markdown }}</q>
+                {% if use.url and use.source %}
+                  — <a href="{{ use.url }}">{{ use.source }}</a>
+                {% elif use.source %}
+                  — {{ use.source }}
+                {% endif %}
+              </div>
+            {% endfor %}
           {% endfor %}
         </div>
       </dd>

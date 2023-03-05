@@ -61,9 +61,15 @@ word: the word
 type: is it a noun, verb or adjective
 definition_list:
   - text: this is the first definition of the word
-    in_use: this is _the word_ used in a sentence
+    in_use:
+      - text: this is _the word_ used in a sentence
+        source: The Example Post
+        url: example.com
   - text: this is the second definition of the word
-    in_use: this is _the second word_ used in a sentence
+    in_use:
+      - text: this is _the second word_ used in a sentence
+        source: The Example Times
+        url: example.com
 ```
 
 An example of a simple implementation would look like this:
@@ -73,7 +79,10 @@ word: contribution
 type: noun
 definition_list:
   - text: funds, property or other resources given to a campaign
-    in_use: "The company's CEO made a contribution of $1,000 to the president's reelection campaign"
+    in_use:
+      - text: "The company's CEO made a contribution of $1,000 to the president's reelection campaign"
+        source: The Example Post
+        url: https://example.com
 ```
 
 The definition shoudl be saved in a new file with the same name as the word. The file name should be all lowercase. Any spaces should be replaced with a hyphen.

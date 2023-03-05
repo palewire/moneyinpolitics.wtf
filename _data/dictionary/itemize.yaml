@@ -2,4 +2,7 @@ word: itemize
 type: verb
 definition_list:
   - text: to list out a contribution, expenditure, loan or other transaction in detail on a campaign filing, typically with the name, date and amount and other metadata linked to the event
-    in_use: The campaign is required to itemize all contributions over a certain amount
+    in_use:
+      - text: The campaign is required to itemize all contributions over a certain amount
+        source:
+        url:

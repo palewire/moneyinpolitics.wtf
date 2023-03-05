@@ -2,4 +2,7 @@ word: cycle
 type: noun
 definition_list:
   - text: the period of time that lead up to and include an election; House of Representatives cycles are two years; Senate cycles are six years; presidential cycles are four years; commonly used to summarize financial activity for an election.
-    in_use: The defense sector steered $18.9 million in campaign contributions to members of the 118th Congress during the 2022 election cycle.
+    in_use:
+      - text: The defense sector steered $18.9 million in campaign contributions to members of the 118th Congress during the 2022 election cycle.
+        source: Open Secrets
+        url: https://www.opensecrets.org/news/2023/03/armed-services-committee-members-received-5-8-million-from-defense-sector-during-2022-election-cycle/

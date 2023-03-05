@@ -22,11 +22,19 @@
    */
    export let definitionList;
 
-  const truncate = (str, max = 10) => {
-    const array = str.trim().split(' ');
-    const ellipsis = array.length > max ? '...' : '';
-    return array.slice(0, max).join(' ') + ellipsis;
+  const truncate = (inputString, maximumLength = 44) => {
+    let outputString = "";
+    let outputLength = 0;
+    const tokenList = inputString.trim().split(' ');
+    tokenList.forEach((token) => {
+      outputLength += token.length;
+      if (outputLength < maximumLength) {
+        outputString += ` ${token}`;
+      }
+    });
+    return outputString + " ...";
   };
+
   const getShortDefinition = (arr) => {
     if (arr.length > 0) {
       return truncate(arr[0].text);

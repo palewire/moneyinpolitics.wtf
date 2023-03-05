@@ -31,7 +31,7 @@
             <div class="card--definition-text"><sup>{{ loop.index }}</sup> {{ definition.text|markdown }}</div>
             {% for use in definition.in_use %}
               <div class="card--definition-in-use">
-                <q>{{ use.text|markdown }}</q>
+                <q>{{ use.text|italicize(obj.word)|markdown }}</q>
                 {% if use.url and use.source %}
                   — <a href="{{ use.url }}">{{ use.source }}</a>
                 {% elif use.source %}

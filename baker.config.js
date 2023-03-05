@@ -30,6 +30,9 @@ export default {
     markdown(value) {
       return md.renderInline(value);
     },
+    italicize(value, term) {
+      return value.replace(term, `_${term}_`);
+    },
   },
   createPages(createPage, data) {
     const wordList = Object.values(data.dictionary);

@@ -2,8 +2,6 @@ name: Request a word
 description: Ask the maintainers to define a word
 title: "Request a word"
 labels: ["enhancement"]
-assignees:
-  - palewire
 body:
   - type: markdown
     attributes:

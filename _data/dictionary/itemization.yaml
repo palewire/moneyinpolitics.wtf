@@ -3,6 +3,6 @@ type: noun
 definition_list:
   - text: a contribution, expenditure, loan or other transaction listed out in detail on a campaign filing, typically with the name, date and amount and other metadata linked to the event
     in_use:
-      - text: Campaign finance laws typically require the itemization of all contributions over a certain amount
-        source:
-        url:
+      - text: "Federal PACs are already required by the FEC to file reports detailing dollars in and out of the PAC, with itemization requirements already in place for contributions or other expenditures of $200 or more."
+        source: JD Supra
+        url: https://www.jdsupra.com/legalnews/state-proposed-bills-would-restrict-5316314/

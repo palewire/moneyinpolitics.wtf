@@ -33,15 +33,6 @@ export default {
     italicize(value, term) {
       return value.replace(term, `_${term}_`);
     },
-    wordLinks(value, wordList, word) {
-      for (const obj of wordList) {
-        if (obj.word != word) {
-          const url = `[${obj.word}](/${slugifyFunc(obj.word)}/)`;
-          value = value.replace(obj.word, url);
-        }
-      }
-      return value;
-    },
   },
   createPages(createPage, data) {
     const wordList = Object.values(data.dictionary);
@@ -64,7 +55,7 @@ export default {
         seo_headline: `${obj.word} - ${data.meta.seo_headline}`,
         seo_description: obj.definition_list[0].text,
       };
-      createPage(template, url, { obj, meta, wordList });
+      createPage(template, url, { obj, meta });
       urlList.push(url);
     }
     // Make sitemap

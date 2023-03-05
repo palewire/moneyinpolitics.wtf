@@ -9,7 +9,7 @@
 {% endblock scripts %}
 
 {% block content %}
-<article>
+<article class="word-detail">
   <header>
     <div class="masthead">
       <h1><a href="/">MONEYINPOLITICS.wtf</a></h1>
@@ -52,6 +52,9 @@
       </div>
       </div>
     </div>
+  </div>
+  <div class="footnotes">
+    <a href="https://github.com/palewire/moneyinpolitics.wtf/commits/main/_data/dictionary/{{ obj.word|slugify }}.yaml">Changelog</a>
   </div>
   <div class="card card--detail card--about">
     <div class="card--headline"><a href="/about/">About</a></div>

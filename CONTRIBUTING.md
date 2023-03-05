@@ -21,9 +21,9 @@ This site is run by [Ben Welsh](https://palewi.re/who-is-ben-welsh/). You can re
 
 ## How definitions are stored
 
-The definitions published by the site are stored in the [`dictionary.yaml`](https://github.com/palewire/moneyinpolitics.wtf/blob/main/_data/dictionary.yaml) file in the `_data` directory.
+The definitions published by the site are stored in the [`dictionary`](https://github.com/palewire/moneyinpolitics.wtf/blob/main/_data/dictionary) folder in the `_data` directory.
 
-Note that the file’s name ends with `.yaml`. That tells computers that it is expected to contain data structured in YAML format.
+Note that each file’s name ends with `.yaml`. That tells computers that it is expected to contain data structured in YAML format.
 
 [YAML](https://en.wikipedia.org/wiki/YAML) is a data serialization language. It is used to represent data structures in a human-readable and easy-to-write format. YAML stands for “YAML Ain’t Markup Language,” because it is not a markup language like HTML or XML (and because nerds like inventing [silly acronyms](https://en.wikipedia.org/wiki/Backronym).)
 
@@ -57,28 +57,30 @@ address:
 This repository has its own custom data structure expressed in YAML. Here is an example of the fields we allow.
 
 ```yaml
-- word: the word
-  type: is it a noun, verb or adjective
-  definition_list:
-    - text: this is the first definition of the word
-      in_use: this is _the word_ used in a sentence
-    - text: this is the second definition of the word
-      in_use: this is _the second word_ used in a sentence
+word: the word
+type: is it a noun, verb or adjective
+definition_list:
+  - text: this is the first definition of the word
+    in_use: this is _the word_ used in a sentence
+  - text: this is the second definition of the word
+    in_use: this is _the second word_ used in a sentence
 ```
 
 An example of a simple implementation would look like this:
 
 ```yaml
-- word: contribution
-  type: noun
-  definition_list:
-    - text: funds, property or other resources given to a campaign
-      in_use: "The company's CEO made a contribution of $1,000 to the president's reelection campaign"
+word: contribution
+type: noun
+definition_list:
+  - text: funds, property or other resources given to a campaign
+    in_use: "The company's CEO made a contribution of $1,000 to the president's reelection campaign"
 ```
+
+The definition shoudl be saved in a new file with the same name as the word. The file name should be all lowercase. Any spaces should be replaced with a hyphen.
 
 ## Adding a definition
 
-To add a definition, you should edit the [`dictionary.yaml`](https://github.com/palewire/moneyinpolitics.wtf/blob/main/_data/dictionary.yaml) file and add a new YAML entry to the file. The only technical requirement is that it appear indented by two spaces below the `word_list` variable defined in the first line.
+To add a definition, you should add a new YAML file to the [`dictionary`](https://github.com/palewire/moneyinpolitics.wtf/blob/main/_data/dictionary) directory. Our data format is described above.
 
 If you're unfamiliar with GitHub's system for proposing changes, you can follow the [instructions for editing files](https://docs.github.com/en/repositories/working-with-files/managing-files/editing-files#editing-files-in-another-users-repository). Or you can [create an issue](https://github.com/palewire/moneyinpolitics.wtf/issues/new?assignees=palewire&labels=enhancement&template=add-a-word.yaml&title=Add+a+word) and submit your definition via a form.
 

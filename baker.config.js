@@ -22,9 +22,12 @@ export default {
     urlescape(value) {
       return encodeURIComponent(value);
     },
+    json(value) {
+      return JSON.stringify(value, null, 2);
+    },
   },
   createPages(createPage, data) {
-    const wordList = data.dictionary.word_list;
+    const wordList = Object.values(data.dictionary);
     createPage('dictionary.json.njk', '/api/dictionary.json', {
       object_list: JSON.stringify(wordList, null, 2),
     });

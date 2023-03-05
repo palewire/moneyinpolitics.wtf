@@ -1,3 +1,5 @@
+var md = require('markdown-it')();
+
 const entrypoints = ['index', 'detail', 'about'];
 
 const slugifyFunc = (str) =>
@@ -24,6 +26,9 @@ export default {
     },
     json(value) {
       return JSON.stringify(value, null, 2);
+    },
+    markdown(value) {
+      return md.render(value);
     },
   },
   createPages(createPage, data) {

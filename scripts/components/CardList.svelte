@@ -3,7 +3,6 @@
   import AboutCard from './AboutCard.svelte';
   import RequestCard from './RequestCard.svelte';
   import Card from './Card.svelte'; 
-  import { each } from 'svelte/internal';
 
   /**
    * @type {Array<any>}

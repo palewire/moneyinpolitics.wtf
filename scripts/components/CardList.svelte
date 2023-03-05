@@ -52,7 +52,7 @@
 <dl class="card-list {hide ? 'display-none': ''}">
   {#each $filtered as obj, idx}
     <Card word={obj.word} type={obj.type} definitionList={obj.definition_list}></Card>
-    {#if idx == 6 && !$term}
+    {#if idx == 9 && !$term}
       <AboutCard></AboutCard>
     {/if}
   {/each}

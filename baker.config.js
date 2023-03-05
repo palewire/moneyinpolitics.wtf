@@ -28,7 +28,7 @@ export default {
       return JSON.stringify(value, null, 2);
     },
     markdown(value) {
-      return md.render(value);
+      return md.renderInline(value);
     },
   },
   createPages(createPage, data) {

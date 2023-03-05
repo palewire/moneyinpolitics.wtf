@@ -3,6 +3,7 @@
   import AboutCard from './AboutCard.svelte';
   import RequestCard from './RequestCard.svelte';
   import Card from './Card.svelte'; 
+  import { each } from 'svelte/internal';
 
   /**
    * @type {Array<any>}
@@ -49,12 +50,12 @@
 </div>
 
 <dl class="card-list {hide ? 'display-none': ''}">
-  {#each $filtered as obj}
-    <Card word={obj.word} type={obj.type} definitionList={ obj.definition_list }></Card>
+  {#each $filtered as obj, idx}
+    <Card word={obj.word} type={obj.type} definitionList={obj.definition_list}></Card>
+    {#if idx == 3 && !$term}
+      <AboutCard></AboutCard>
+    {/if}
   {/each}
-  {#if !$term}
-    <AboutCard></AboutCard>
-  {/if}
   {#if $term && $filtered.length == 0}
     <RequestCard word={$term}></RequestCard>
   {/if}

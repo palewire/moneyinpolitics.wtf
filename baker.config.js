@@ -31,7 +31,7 @@ export default {
       return md.renderInline(value);
     },
     italicize(value, term) {
-      return value.replace(term, `_${term}_`);
+      return value.replace(new RegExp(`(${term})`, 'i'), '_$1_');
     },
   },
   createPages(createPage, data) {

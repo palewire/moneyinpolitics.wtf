@@ -85,7 +85,7 @@ definition_list:
         url: https://example.com
 ```
 
-The definition shoudl be saved in a new file with the same name as the word. The file name should be all lowercase. Any spaces should be replaced with a hyphen.
+The definition should be saved in a new file with the same name as the word. The file name should be all lowercase. Any spaces should be replaced with a hyphen.
 
 ## Adding a definition
 

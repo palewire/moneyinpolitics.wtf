@@ -1,0 +1,11 @@
+word: committee ID
+type: noun
+definition_list:
+  - text: the unique identifier for a political committee; at the federal level it is usually a nine-character alphanumeric code that is retained across election cycles;
+    in_use:
+      - text: "In most cases where this error has occurred there has been a committee ID placed where a candidate ID should be placed or visa versa."
+        source: FEC
+        url: https://www.fec.gov/help-candidates-and-committees/filing-reports/validation-errors-explained/
+      - text: "The top of the page contains the committee ID and a way to conduct a new search. "
+        source: Oregon Capital Chronicle
+        url: https://oregoncapitalchronicle.com/2022/05/02/how-to-find-fundraising-and-spending-in-oregon-politics/

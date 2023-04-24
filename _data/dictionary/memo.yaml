@@ -1,0 +1,11 @@
+word: memo
+type: noun
+definition_list:
+  - text: supplementary information included with an itemized transaction; used to explain reimbursements and other complex or unusual occurrences; on FEC forms the disclosure typically includes two fields, a coded value and a text description; in some cases, as when the FEC's coded entry is 'X', the itemized records should not be included in aggregated totals.
+    in_use:
+      - text: " In an effort to increase reporting clarity, the Commission has added a new 'memo item' box to the Forms 3, 3P and 3X filed by campaigns, parties and political action committees."
+        source: FEC
+        url: https://www.fec.gov/updates/check-the-box-to-report-memo-entries/
+      - text: "Independent expenditures should be disclosed on Schedule E of the FEC Form 3X with 'non-contribution account' included in the description field or as memo text attached to that entry."
+        source: Wiley
+        url: https://www.wiley.law/newsletter-4039

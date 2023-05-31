@@ -1,0 +1,11 @@
+word: back reference transaction id
+type: noun
+definition_list:
+  - text: a identifer that links one itemized transaction to another, typically larger lump sum transaction; can be used for a variety of purposes, including grouping specific purchases with a single credit card payment. It also can be used to link an original contribution that is redesignated or reattributed into multiple transactions.
+    in_use:
+      - text: "The back reference transaction ID of the specific purchases will equal the transaction ID of the payment to the credit card company."
+        source: FEC
+        url: https://www.fec.gov/campaign-finance-data/operating-expenditures-file-description/
+      - text: "Using a unique identifier for each transaction and a back reference for itemized expenses, we construct an indicator variable for the parent expense."
+        source: Journal of Quantitative Description
+        url: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiqur7t4cL-AhWMIkQIHY29CdMQFnoECGUQAQ&url=https%3A%2F%2Fjournalqd.org%2Farticle%2Fdownload%2F3608%2F2893&usg=AOvVaw0-U0hJKB5XwddYWoc916J1

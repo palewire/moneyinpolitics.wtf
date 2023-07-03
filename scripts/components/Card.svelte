@@ -22,7 +22,7 @@
    */
    export let definitionList;
 
-  const truncate = (inputString, maximumLength = 50) => {
+  const truncate = (inputString, maximumLength = 55) => {
     let outputString = "";
     let outputLength = 0;
     const tokenList = inputString.trim().split(' ');

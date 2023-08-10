@@ -1,7 +1,7 @@
 word: loan
 type: noun
 definition_list:
-  - text: a sum of money borrowed from another entity; typically loans must be disclosed in campaign-finance disclosures as another type of contribution; in many cases, candidates will loan personal funds to their campaign committees.
+  - text: a sum of money borrowed from another entity for use in a campaign; typically loans must be disclosed in campaign-finance disclosures as another type of contribution; in many cases, candidates will loan personal funds to their campaign committees.
     in_use:
       - text: "Cooper’s campaign reported that it had brought in $1.5 million by July 13 in total receipts, including the $1.3 million in candidate loans."
         source: Roll Call

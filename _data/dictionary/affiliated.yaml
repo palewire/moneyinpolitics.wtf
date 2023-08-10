@@ -1,0 +1,19 @@
+word: affiliated
+type: adjective
+definition_list:
+  - text: committees formally controlled by the same person, party or organization; treated as a single entity and counted together when [applying legal limits](https://www.fec.gov/regulations/110-3/2022-annual-110#110-3-a) on contributions and expenditures.
+    in_use:
+      - text: "Two or more affiliated committees are treated as a single committee for the purposes of the contribution limits."
+        source: FEC
+        url: https://www.fec.gov/help-candidates-and-committees/candidate-taking-receipts/affiliation-and-contribution-limits/
+      - text: "Five of the six FEC commissioners were able to agree that, under these circumstances, CenterPoint and Enable are not considered to be affiliated, and thus neither are their PACs."
+        source: Wiley
+        url: https://www.wiley.law/printpilot-newsletter-FEC-Partially-Deadlocks-Affiliation-Joint-Venturers-PACs.pdf
+  - text: committees informally considered to be political aligned while maintaining enough separation to avoid fundraising and spending limits; typically used to group candidate commmittees with supportive outside groups, such as Super PACs.
+    in_use:
+       - text: "MAGA Inc. has by far the most money of any super PAC affiliated with Trump’s political orbit as of Oct. 19."
+         source: Open Secrets
+         url: https://www.opensecrets.org/news/2022/11/111-7-million-in-the-bank-but-only-13-5-million-in-the-tank-how-trump-can-and-cannot-use-his-political-operations-cash/
+       - text: "Any move to use that money in support of his national ambitions — including transferring it to an affiliated super PAC, called Never Back Down — would still be likely to raise red flags among campaign finance watchdogs."
+         source: New York Times
+         url: https://www.nytimes.com/2023/04/08/us/politics/ron-desantis-2024-fundraising-trump.html

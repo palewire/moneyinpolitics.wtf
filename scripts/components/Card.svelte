@@ -35,9 +35,13 @@
     return outputString + " ...";
   };
 
+  const stripMarkdown = (s) => {
+    return s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1');
+  }
+
   const getShortDefinition = (arr) => {
     if (arr.length > 0) {
-      return truncate(arr[0].text);
+      return truncate(stripMarkdown(arr[0].text));
     } else {
       return '';
     }

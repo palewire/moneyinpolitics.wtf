@@ -1,7 +1,7 @@
 word: committee ID
 type: noun
 definition_list:
-  - text: the unique identifier for a political committee; at the federal level it is usually a nine-character alphanumeric code that is retained across election cycles;
+  - text: the unique identifier for a political committee; at the federal level it is usually a nine-character alphanumeric code that is retained across election cycles
     in_use:
       - text: "In most cases where this error has occurred there has been a committee ID placed where a candidate ID should be placed or visa versa."
         source: FEC

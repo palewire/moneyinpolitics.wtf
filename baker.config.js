@@ -10,6 +10,10 @@ const slugifyFunc = (str) =>
     .replace(/[\s_-]+/g, '-')
     .replace(/^-+|-+$/g, '');
 
+const stripMarkdownFunc = (s) => {
+  return s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1');
+};
+
 export default {
   domain: 'https://moneyinpolitics.wtf/',
   entrypoints: `scripts/${
@@ -33,6 +37,9 @@ export default {
     italicize(value, term) {
       return value.replace(new RegExp(`(${term})`, 'i'), '_$1_');
     },
+    stripMarkdown(s) {
+      return stripMarkdownFunc(s);
+    },
   },
   createPages(createPage, data) {
     const wordList = Object.values(data.dictionary);
@@ -53,7 +60,7 @@ export default {
         headline: data.meta.headline,
         description: data.meta.description,
         seo_headline: `${obj.word} - ${data.meta.seo_headline}`,
-        seo_description: obj.definition_list[0].text,
+        seo_description: stripMarkdownFunc(obj.definition_list[0].text),
       };
       createPage(template, url, { obj, meta });
       urlList.push(url);

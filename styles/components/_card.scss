@@ -56,7 +56,7 @@
     a {
       color: colors.$green;
     }
-    dt.word {
+    .word {
       display: inline;
     }
   }
@@ -72,6 +72,9 @@
     font-weight: 400;
     color: colors.$black;
     padding: 0.2rem 0;
+    @media (max-width: 600px) {
+      padding-bottom: 0.5rem;
+    }
   }
   .card--definition-in-use {
     color: colors.$dark-gray;

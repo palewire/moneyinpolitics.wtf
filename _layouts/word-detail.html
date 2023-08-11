@@ -21,11 +21,11 @@
   <section id="card-container" class="card-container"></section>
   <div class="card card--detail card--big">
     <div class="card--headline">
-      <dt class="word">{{ obj.word }}</dt>
+      <div class="word">{{ obj.word }}</div>
       <span class="card--type">{{ obj.type }}</span>
     </div>
     <div class="card--body">
-      <dd class="card--definition-list">
+      <div class="card--definition-list">
         <div class="card--definition">
           {% for definition in obj.definition_list %}
             <div class="card--definition-text"><sup>{{ loop.index }}</sup> {{ definition.text|markdown }}</div>
@@ -41,19 +41,19 @@
             {% endfor %}
           {% endfor %}
         </div>
-      </dd>
+      </div>
     </div>
     <div class="card--actions">
       <div class="card--actions-border">
       <div class="card--supplemental">
         <div class="card--action-item card--flag">
-          <a href="https://github.com/palewire/moneyinpolitics.wtf/issues/new?assignees=palewire&labels=bug&template=flag-an-error.yaml&title=Error%20with%20{{ obj.word|escape }}&word={{ obj.word|escape }}">
+          <a aria-label="Flag" href="https://github.com/palewire/moneyinpolitics.wtf/issues/new?assignees=palewire&labels=bug&template=flag-an-error.yaml&title=Error%20with%20{{ obj.word|escape }}&word={{ obj.word|escape }}">
             <svg width="15" height="15" viewBox="0 0 24 24"><path d="M14.4,6L14,4H5V21H7V14H12.6L13,16H20V6H14.4Z" fill="currentColor"/></svg>
             Flag
           </a>
         </div>
         <div id="card--share" class="card--action-item card--share display-none">
-          <a>
+          <a aria-label="Share">
             <svg width="15" height="15" viewBox="0 0 24 24"><path d="M21,12L14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12Z" fill="currentColor"/></svg>
             Share
           </a>
@@ -68,11 +68,11 @@
   <div class="card card--detail card--about">
     <div class="card--headline"><a href="/about/">About</a></div>
     <div class="card--body">
-      <dd class="card--definition-list">
+      <div class="card--definition-list">
         <div class="card--definition">
           <div class="card--definition-text">Who’s behind this site — and how you can contribute.</div>
         </div>
-      </dd>
+      </div>
     </div>
     <div class="card--actions">
       <div class="card--actions-border">

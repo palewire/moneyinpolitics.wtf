@@ -48,7 +48,7 @@
   <input bind:value={val} type="text" placeholder="Search a word...">
 </div>
 
-<dl class="card-list {hide ? 'display-none': ''}">
+<section class="card-list {hide ? 'display-none': ''}">
   {#each $filtered as obj, idx}
     <Card word={obj.word} type={obj.type} definitionList={obj.definition_list}></Card>
     {#if idx == 9 && !$term}
@@ -58,4 +58,4 @@
   {#if $term && $filtered.length == 0}
     <RequestCard word={$term}></RequestCard>
   {/if}
-</dl>
+</section>

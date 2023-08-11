@@ -4,5 +4,5 @@ definition_list:
   - text: to list out a [contribution](/contribution/), [expenditure](/expenditure/), [loan](/loan/) or other transaction in detail on a campaign [filing](/filing/), typically with the name, date and amount and other metadata linked to the event
     in_use:
       - text: Campaigns do not need to itemize or provide receipts for expenses of less than $200.
-        source: New York Times
+        source: The New York Times
         url: https://www.nytimes.com/2023/02/13/nyregion/george-santos-campaign-money.html

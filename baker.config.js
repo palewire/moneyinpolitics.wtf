@@ -59,7 +59,7 @@ export default {
         social_image: data.meta.social_image,
         headline: data.meta.headline,
         description: data.meta.description,
-        seo_headline: `${obj.word} - ${data.meta.seo_headline}`,
+        seo_headline: obj.word,
         seo_description: stripMarkdownFunc(obj.definition_list[0].text),
       };
       createPage(template, url, { obj, meta });

@@ -1,4 +1,4 @@
-America's most comprehensive dictionary of campaign finance jargon. Made by and for data journalists
+America's most comprehensive dictionary of campaign finance jargon. A free resource created by and for data journalists.
 
 ### Links
 

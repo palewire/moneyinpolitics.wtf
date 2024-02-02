@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development bake serve --config"
   },
   "dependencies": {
-    "@datagraphics/baker": "^0.44.0",
+    "@datagraphics/baker": "https://github.com/brandonrobertz/baker#createpages-dev-fix",
     "@datagraphics/delivery": "^0.6.0",
     "@types/d3-fetch": "^3.0.1",
     "d3-fetch": "^3.0.1",

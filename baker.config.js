@@ -14,6 +14,14 @@ const stripMarkdownFunc = (s) => {
   return s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1');
 };
 
+const escapeHtml = (str) =>
+  str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
 export default {
   domain: 'https://moneyinpolitics.wtf/',
   entrypoints: `scripts/${
@@ -40,6 +48,9 @@ export default {
     stripMarkdown(s) {
       return stripMarkdownFunc(s);
     },
+    escapeHtml(s) {
+      return escapeHtml(s);
+    },
   },
   createPages(createPage, data) {
     const wordList = Object.values(data.dictionary);
@@ -60,7 +71,9 @@ export default {
         headline: data.meta.headline,
         description: data.meta.description,
         seo_headline: obj.word,
-        seo_description: stripMarkdownFunc(obj.definition_list[0].text),
+        seo_description: escapeHtml(
+          stripMarkdownFunc(obj.definition_list[0].text)
+        ),
       };
       createPage(template, url, { obj, meta });
       urlList.push(url);

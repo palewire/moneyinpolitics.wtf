@@ -48,11 +48,10 @@
   }
   $: shortDefinition = getShortDefinition(definitionList);
 
-  const url = `/${slugify(word)}/`;
   const handleShare = function () {
     if (navigator.share) {
       navigator.share({
-        url: `https://moneyinpolitics.wtf${url}`,
+        url: `https://moneyinpolitics.wtf/${slugify(word)}/`,
       })
     }
   };
@@ -69,7 +68,7 @@
     </div>
     <div class="card--actions">
       <div class="card--actions-border">
-      <div class="card--action-item card--expand"><a href="{ url }">Expand</a></div>
+      <div class="card--action-item card--expand"><a href="/{ slugify(word) }/">Expand</a></div>
       <div class="card--supplemental">
         <div class="card--action-item card--flag"><a aria-label="Flag" href="https://github.com/palewire/moneyinpolitics.wtf/issues/new?assignees=palewire&labels=bug&template=flag-an-error.yaml&title=Error%20with%20{ encodeURIComponent(word) }&word={ encodeURIComponent(word) }"><Flag size=15 /></a></div>
         <div class="card--action-item card--share {navigator.share ? '' : 'display-none'}"><a aria-label="Share" on:click={handleShare}><Share size=15 /></a></div>

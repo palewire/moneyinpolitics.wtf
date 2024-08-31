@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@datagraphics/prettier-config": "^2.0.0",
-    "@types/node": "^14.17.20",
+    "@types/node": "^22.5.1",
     "@vercel/git-hooks": "^1.0.0",
     "lint-staged": "^15.2.9",
     "prettier": "^2.4.1"

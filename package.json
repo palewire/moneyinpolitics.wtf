@@ -15,7 +15,7 @@
     "markdown-it": "^13.0.1",
     "slugify": "^1.6.5",
     "svelte": "^3.55.0",
-    "svelte-material-icons": "^2.0.4"
+    "svelte-material-icons": "^3.0.5"
   },
   "devDependencies": {
     "@datagraphics/prettier-config": "^2.0.0",

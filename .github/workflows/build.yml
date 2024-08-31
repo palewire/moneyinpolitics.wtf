@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
       - name: Use Node.js 16.x
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 16
 
@@ -31,10 +31,10 @@ jobs:
           echo 'encoding: UTF-8' > _dist/_config.yml
 
       - name: Setup Pages
-        uses: actions/configure-pages@v2.1.3
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _dist
 
@@ -51,4 +51,4 @@ jobs:
     steps:
       - id: deployment
         name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1.2.3
+        uses: actions/deploy-pages@v4

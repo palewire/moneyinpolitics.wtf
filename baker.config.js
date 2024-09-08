@@ -14,6 +14,10 @@ const stripMarkdownFunc = (s) => {
   return s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1');
 };
 
+function escapeRegExp(string) {
+  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+}
+
 const escapeHtml = (str) =>
   str
     .replace(/&/g, '&amp;')
@@ -43,7 +47,7 @@ export default {
       return md.renderInline(value);
     },
     italicize(value, term) {
-      return value.replace(new RegExp(`(${term})`, 'i'), '_$1_');
+      return value.replace(new RegExp(`(${escapeRegExp(term)})`, 'i'), '_$1_');
     },
     stripMarkdown(s) {
       return stripMarkdownFunc(s);

@@ -1,0 +1,11 @@
+word: ultimate payee
+type: noun
+definition_list:
+  - text: the final recipent of an [expenditure](/expenditure/) after it has passed through one or more intermediaries; can be concealed by routing money to subcontrators through [limited liability companies](/llc/)and other [conduits](/conduit/) that are not required to [itemize](/itemize/) their spending
+    in_use:
+      - text: "That’s because the [campaign](/campaign/) used an opaque payment scheme that concealed details of hundreds of millions of dollars in spending by routing payments through shell companies where the ultimate payee is hidden."
+        source: Open Secrets
+        url: https://www.opensecrets.org/news/2021/02/jan-6-protests-trump-operation-paid-3p5mil/
+      - text: " Among those who wrote a letter pushing against stricter disclosure rules for the so-called ultimate payee of campaign cash was Marc Elias, a top Democratic lawyer."
+        source: Politico
+        url: https://www.politico.com/story/2016/11/how-politicians-hide-their-spending-from-the-public-230609

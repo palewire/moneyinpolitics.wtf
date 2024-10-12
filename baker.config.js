@@ -47,7 +47,7 @@ export default {
       return md.renderInline(value);
     },
     italicize(value, term) {
-      return value.replace(new RegExp(`(${escapeRegExp(term)})`, 'i'), '_$1_');
+      return value.replace(new RegExp(`(${escapeRegExp(term)})\s`, 'i'), '_$1_');
     },
     stripMarkdown(s) {
       return stripMarkdownFunc(s);

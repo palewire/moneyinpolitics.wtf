@@ -1,0 +1,11 @@
+word: gray money
+type: noun
+definition_list:
+  - text: funds that come from a unknown source because the [contributor](/contributor/) [disclosed](/disclosure/) to the public is an intermediary that is not required to reveal its donors
+    in_use:
+      - text: "Gray money is spending by [super PACs](/super-pac/) that disclose other [PACs](/pac/) as donors, making it impossible for the public to identify the actual funders without sifting through multiple layers of PAC [disclosures](/disclosure/)."
+        source: The Atlantic
+        url: https://www.theatlantic.com/politics/archive/2016/06/the-rise-of-gray-money-in-politics/489002/
+      - text: "Gray money is particularly useful when partisan operatives and donors want to meddle on the other side of the aisle, as when supporting third-party candidates to siphon votes."
+        source: The New York Times
+        url: https://www.nytimes.com/2024/10/30/us/politics/dark-money-presidential-campaign.html

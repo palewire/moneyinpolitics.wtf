@@ -7,7 +7,7 @@
     "start": "NODE_ENV=development bake serve --config"
   },
   "dependencies": {
-    "@datagraphics/baker": "^0.46.0",
+    "@datagraphics/baker": "^0.47.2",
     "@datagraphics/delivery": "^0.6.0",
     "@types/d3-fetch": "^3.0.7",
     "d3-fetch": "^3.0.1",

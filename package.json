@@ -21,7 +21,7 @@
     "@datagraphics/prettier-config": "^2.0.0",
     "@types/node": "^22.15.30",
     "@vercel/git-hooks": "^1.0.0",
-    "lint-staged": "^15.4.3",
+    "lint-staged": "^16.1.0",
     "prettier": "^3.5.3"
   },
   "prettier": "@datagraphics/prettier-config",

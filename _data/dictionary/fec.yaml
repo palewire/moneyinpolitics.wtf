@@ -7,7 +7,7 @@ definition_list:
         source: NBC News
         url: https://www.nbcnews.com/politics/donald-trump/fox-corp-trump-campaign-hit-fec-complaint-rcna73342
     in_use:
-      - text: "The FEC regulates the use of common vendors for media placement because the targeting of political ads is a critical element of a campaign effort."
+      - text: "The FEC regulates the use of common vendors for media placement because the targeting of political ads is a critical element of a campaign effort"
         source: Campaign Legal Center
         url: https://campaignlegal.org/cases-actions/pushing-fec-enforce-law-against-nra-illegal-spending-coordination-giffords-v-fec
         

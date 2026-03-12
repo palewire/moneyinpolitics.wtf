@@ -6,3 +6,8 @@ definition_list:
       - text: "On Friday, End Citizens United PAC filed a complaint with the FEC arguing that Fox Corp. chair Rupert Murdoch broke the law when he shared Joe Biden's campaign ad and debate strategy with Trump adviser Jared Kushner."
         source: NBC News
         url: https://www.nbcnews.com/politics/donald-trump/fox-corp-trump-campaign-hit-fec-complaint-rcna73342
+    in_use:
+      - text: "The FEC regulates the use of common vendors for media placement because the targeting of political ads is a critical element of a campaign effort."
+        source: Campaign Legal Center
+        url: https://campaignlegal.org/cases-actions/pushing-fec-enforce-law-against-nra-illegal-spending-coordination-giffords-v-fec
+        
